@@ -33,5 +33,17 @@ namespace Solution.Warehouses
         /// </summary>
         public string Remark { get; set; }
 
+
+        protected WareHouseLocation()
+        {
+        }
+
+        public WareHouseLocation(Guid id, Guid wareHouseAreaId, string code, string name, string remark) : base(id)
+        {
+            WareHouseAreaId = wareHouseAreaId;
+            Code = code;
+            Name = name;
+            Remark = remark;
+        }
     }
 }

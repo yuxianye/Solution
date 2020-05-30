@@ -23,5 +23,15 @@ namespace Solution.Warehouses
         /// </summary>
         public string Remark { get; set; }
 
+
+        protected WarehouseType()
+        {
+        }
+
+        public WarehouseType(Guid id, string name, string remark) : base(id)
+        {
+            Name = name;
+            Remark = remark;
+        }
     }
 }

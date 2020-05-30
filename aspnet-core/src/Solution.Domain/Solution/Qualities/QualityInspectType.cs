@@ -27,5 +27,16 @@ namespace Solution.Qualities
         /// </summary>
         public string Remark { get; set; }
 
+
+        protected QualityInspectType()
+        {
+        }
+
+        public QualityInspectType(Guid id, string code, string name, string remark) : base(id)
+        {
+            Code = code;
+            Name = name;
+            Remark = remark;
+        }
     }
 }

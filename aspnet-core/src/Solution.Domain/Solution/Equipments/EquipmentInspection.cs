@@ -75,6 +75,18 @@ namespace Solution.Equipments
             Solution = solution;
             Remark = remark;
         }
+
+        public EquipmentInspection(Guid id, Guid equipmentId, string inspectPerson, DateTime inspectionTime, Guid equipmentInspectionResultId, string problem, string cause, string solution, string remark) : base(id)
+        {
+            EquipmentId = equipmentId;
+            InspectPerson = inspectPerson;
+            InspectionTime = inspectionTime;
+            EquipmentInspectionResultId = equipmentInspectionResultId;
+            Problem = problem;
+            Cause = cause;
+            Solution = solution;
+            Remark = remark;
+        }
     }
 
 

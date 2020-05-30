@@ -38,5 +38,18 @@ namespace Solution.Warehouses
         /// </summary>
         public string Remark { get; set; }
 
+
+        protected Warehouse()
+        {
+        }
+
+        public Warehouse(Guid id, Guid enterpriseAreaId, string name, string manager, string phone, string remark) : base(id)
+        {
+            EnterpriseAreaId = enterpriseAreaId;
+            Name = name;
+            Manager = manager;
+            Phone = phone;
+            Remark = remark;
+        }
     }
 }

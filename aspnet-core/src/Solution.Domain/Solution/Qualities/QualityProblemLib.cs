@@ -28,5 +28,16 @@ namespace Solution.Qualities
         /// </summary>
         public string Remark { get; set; }
 
+
+        protected QualityProblemLib()
+        {
+        }
+
+        public QualityProblemLib(Guid id, string code, string name, string remark) : base(id)
+        {
+            Code = code;
+            Name = name;
+            Remark = remark;
+        }
     }
 }

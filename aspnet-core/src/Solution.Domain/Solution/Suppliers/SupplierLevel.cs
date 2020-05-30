@@ -23,5 +23,15 @@ namespace Solution.Suppliers
         /// </summary>
         public string Remark { get; set; }
 
+
+        protected SupplierLevel()
+        {
+        }
+
+        public SupplierLevel(Guid id, string name, string remark) : base(id)
+        {
+            Name = name;
+            Remark = remark;
+        }
     }
 }

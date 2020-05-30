@@ -47,5 +47,20 @@ namespace Solution.Qualities
         /// </summary>
         public string Remark { get; set; }
 
+
+        protected QualityInspect()
+        {
+        }
+
+        public QualityInspect(Guid id, string inspectPerson, Guid qualityInspectTypeId, DateTime inspectTime, string name, Guid qualityProblemLibId, Guid qualityInspectResultId, string remark) : base(id)
+        {
+            InspectPerson = inspectPerson;
+            QualityInspectTypeId = qualityInspectTypeId;
+            InspectTime = inspectTime;
+            Name = name;
+            QualityProblemLibId = qualityProblemLibId;
+            QualityInspectResultId = qualityInspectResultId;
+            Remark = remark;
+        }
     }
 }
