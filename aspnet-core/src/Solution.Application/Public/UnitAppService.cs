@@ -10,11 +10,11 @@ namespace Solution.Public
     public class UnitAppService : CrudAppService<Unit, UnitDto, Guid, PagedAndSortedResultRequestDto, CreateUpdateUnitDto, CreateUpdateUnitDto>,
         IUnitAppService
     {
-        protected override string GetPolicyName { get; set; } = SolutionPermissions.Public.Default;
-        protected override string GetListPolicyName { get; set; } = SolutionPermissions.Public.Default;
-        protected override string CreatePolicyName { get; set; } = SolutionPermissions.Public.Create;
-        protected override string UpdatePolicyName { get; set; } = SolutionPermissions.Public.Update;
-        protected override string DeletePolicyName { get; set; } = SolutionPermissions.Public.Delete;
+        protected override string GetPolicyName { get; set; } = SolutionPermissions.Units.Default;
+        protected override string GetListPolicyName { get; set; } = SolutionPermissions.Units.Default;
+        protected override string CreatePolicyName { get; set; } = SolutionPermissions.Units.Create;
+        protected override string UpdatePolicyName { get; set; } = SolutionPermissions.Units.Update;
+        protected override string DeletePolicyName { get; set; } = SolutionPermissions.Units.Delete;
 
         public UnitAppService(IRepository<Unit, Guid> repository) : base(repository)
         {

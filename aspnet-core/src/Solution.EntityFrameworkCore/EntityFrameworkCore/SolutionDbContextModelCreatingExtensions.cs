@@ -235,6 +235,13 @@ namespace Solution.EntityFrameworkCore
                 b.ConfigureByConvention(); 
                 /* Configure more properties here */
             });
+
+            builder.Entity<Suppliers.Suppliers>(b =>
+            {
+                b.ToTable(SolutionConsts.DbTablePrefix + "Suppliers", SolutionConsts.DbSchema);
+                b.ConfigureByConvention(); 
+                /* Configure more properties here */
+            });
         }
     }
 }

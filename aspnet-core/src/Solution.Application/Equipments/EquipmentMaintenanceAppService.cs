@@ -10,11 +10,11 @@ namespace Solution.Equipments
     public class EquipmentMaintenanceAppService : CrudAppService<EquipmentMaintenance, EquipmentMaintenanceDto, Guid, PagedAndSortedResultRequestDto, CreateUpdateEquipmentMaintenanceDto, CreateUpdateEquipmentMaintenanceDto>,
         IEquipmentMaintenanceAppService
     {
-        protected override string GetPolicyName { get; set; } = SolutionPermissions.Equipments.Default;
-        protected override string GetListPolicyName { get; set; } = SolutionPermissions.Equipments.Default;
-        protected override string CreatePolicyName { get; set; } = SolutionPermissions.Equipments.Create;
-        protected override string UpdatePolicyName { get; set; } = SolutionPermissions.Equipments.Update;
-        protected override string DeletePolicyName { get; set; } = SolutionPermissions.Equipments.Delete;
+        protected override string GetPolicyName { get; set; } = SolutionPermissions.EquipmentMaintenances.Default;
+        protected override string GetListPolicyName { get; set; } = SolutionPermissions.EquipmentMaintenances.Default;
+        protected override string CreatePolicyName { get; set; } = SolutionPermissions.EquipmentMaintenances.Create;
+        protected override string UpdatePolicyName { get; set; } = SolutionPermissions.EquipmentMaintenances.Update;
+        protected override string DeletePolicyName { get; set; } = SolutionPermissions.EquipmentMaintenances.Delete;
 
         public EquipmentMaintenanceAppService(IRepository<EquipmentMaintenance, Guid> repository) : base(repository)
         {

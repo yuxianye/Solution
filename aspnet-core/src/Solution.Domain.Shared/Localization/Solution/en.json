@@ -265,6 +265,19 @@
     "WarehouseTypeRemark": "WarehouseTypeRemark",
     "CreateWarehouseType": "CreateWarehouseType",
     "EditWarehouseType": "EditWarehouseType",
-    "WarehouseTypeDeletionConfirmationMessage": "Are you sure to delete the warehouseType {0}?"
+    "WarehouseTypeDeletionConfirmationMessage": "Are you sure to delete the warehouseType {0}?",
+    "Suppliers": "Suppliers",
+    "SuppliersCode": "SuppliersCode",
+    "SuppliersName": "SuppliersName",
+    "SuppliersSupplierLevelId": "SuppliersSupplierLevelId",
+    "SuppliersContact": "SuppliersContact",
+    "SuppliersPhone": "SuppliersPhone",
+    "SuppliersFax": "SuppliersFax",
+    "SuppliersAddress": "SuppliersAddress",
+    "SuppliersEmail": "SuppliersEmail",
+    "SuppliersRemark": "SuppliersRemark",
+    "CreateSuppliers": "CreateSuppliers",
+    "EditSuppliers": "EditSuppliers",
+    "SuppliersDeletionConfirmationMessage": "Are you sure to delete the suppliers {0}?"
   }
 }

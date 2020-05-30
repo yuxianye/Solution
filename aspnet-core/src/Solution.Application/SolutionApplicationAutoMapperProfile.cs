@@ -83,6 +83,8 @@ namespace Solution
             CreateMap<CreateUpdateWareHouseLocationDto, WareHouseLocation>(MemberList.Source);
             CreateMap<WarehouseType, WarehouseTypeDto>();
             CreateMap<CreateUpdateWarehouseTypeDto, WarehouseType>(MemberList.Source);
+            CreateMap<Suppliers.Suppliers, SuppliersDto>();
+            CreateMap<CreateUpdateSuppliersDto, Suppliers.Suppliers>(MemberList.Source);
         }
     }
 }

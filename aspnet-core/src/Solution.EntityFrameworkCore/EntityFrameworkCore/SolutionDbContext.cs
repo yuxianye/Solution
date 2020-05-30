@@ -62,6 +62,7 @@ namespace Solution.EntityFrameworkCore
         public DbSet<WarehouseArea> WarehouseAreas { get; set; }
         public DbSet<WareHouseLocation> WareHouseLocations { get; set; }
         public DbSet<WarehouseType> WarehouseTypes { get; set; }
+        public DbSet<Suppliers.Suppliers> Suppliers { get; set; }
 
         public SolutionDbContext(DbContextOptions<SolutionDbContext> options)
             : base(options)

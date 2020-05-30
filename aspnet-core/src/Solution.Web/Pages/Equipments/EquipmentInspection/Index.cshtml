@@ -3,7 +3,7 @@
 @using Solution.Permissions
 @using Solution.Web.Pages.Equipments.EquipmentInspection
 @using Volo.Abp.AspNetCore.Mvc.UI.Layout
-@using Abp.Solution.Localization
+@using Solution.Localization
 @using Microsoft.AspNetCore.Mvc.Localization
 @model IndexModel
 @inject IPageLayout PageLayout
@@ -31,7 +31,7 @@
                 <abp-card-title>@L["EquipmentInspection"]</abp-card-title>
             </abp-column>
             <abp-column size-md="_6" class="text-right">
-			    @if (await Authorization.IsGrantedAsync(SolutionPermissions.Equipments.Create))
+			    @if (await Authorization.IsGrantedAsync(SolutionPermissions.EquipmentInspections.Create))
                 { 
                 <abp-button id="NewEquipmentInspectionButton"
                             text="@L["CreateEquipmentInspection"].Value"

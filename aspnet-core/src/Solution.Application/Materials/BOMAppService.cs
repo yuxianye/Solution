@@ -10,11 +10,11 @@ namespace Solution.Materials
     public class BOMAppService : CrudAppService<BOM, BOMDto, Guid, PagedAndSortedResultRequestDto, CreateUpdateBOMDto, CreateUpdateBOMDto>,
         IBOMAppService
     {
-        protected override string GetPolicyName { get; set; } = SolutionPermissions.Materials.Default;
-        protected override string GetListPolicyName { get; set; } = SolutionPermissions.Materials.Default;
-        protected override string CreatePolicyName { get; set; } = SolutionPermissions.Materials.Create;
-        protected override string UpdatePolicyName { get; set; } = SolutionPermissions.Materials.Update;
-        protected override string DeletePolicyName { get; set; } = SolutionPermissions.Materials.Delete;
+        protected override string GetPolicyName { get; set; } = SolutionPermissions.BOMs.Default;
+        protected override string GetListPolicyName { get; set; } = SolutionPermissions.BOMs.Default;
+        protected override string CreatePolicyName { get; set; } = SolutionPermissions.BOMs.Create;
+        protected override string UpdatePolicyName { get; set; } = SolutionPermissions.BOMs.Update;
+        protected override string DeletePolicyName { get; set; } = SolutionPermissions.BOMs.Delete;
 
         public BOMAppService(IRepository<BOM, Guid> repository) : base(repository)
         {

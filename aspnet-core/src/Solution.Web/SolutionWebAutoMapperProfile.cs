@@ -58,6 +58,8 @@ using Solution.Warehouses.Dtos;
 using Solution.Web.Pages.Warehouses.WareHouseLocation.ViewModels;
 using Solution.Warehouses.Dtos;
 using Solution.Web.Pages.Warehouses.WarehouseType.ViewModels;
+using Solution.Suppliers.Dtos;
+using Solution.Web.Pages.Suppliers.Suppliers.ViewModels;
 using AutoMapper;
 
 namespace Solution.Web
@@ -127,6 +129,8 @@ namespace Solution.Web
             CreateMap<CreateEditWareHouseLocationViewModel, CreateUpdateWareHouseLocationDto>();
             CreateMap<WarehouseTypeDto, CreateEditWarehouseTypeViewModel>();
             CreateMap<CreateEditWarehouseTypeViewModel, CreateUpdateWarehouseTypeDto>();
+            CreateMap<SuppliersDto, CreateEditSuppliersViewModel>();
+            CreateMap<CreateEditSuppliersViewModel, CreateUpdateSuppliersDto>();
         }
     }
 }

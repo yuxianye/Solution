@@ -57,5 +57,22 @@ namespace Solution.Suppliers
         /// </summary>
         public string Remark { get; set; }
 
+
+        protected Suppliers()
+        {
+        }
+
+        public Suppliers(Guid id, string code, string name, Guid supplierLevelId, string contact, string phone, string fax, string address, string email, string remark) : base(id)
+        {
+            Code = code;
+            Name = name;
+            SupplierLevelId = supplierLevelId;
+            Contact = contact;
+            Phone = phone;
+            Fax = fax;
+            Address = address;
+            Email = email;
+            Remark = remark;
+        }
     }
 }

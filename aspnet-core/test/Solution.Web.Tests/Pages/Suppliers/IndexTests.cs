@@ -13,7 +13,7 @@ namespace Solution.Pages.Suppliers
             // Arrange
 
             // Act
-            var response = await GetResponseAsStringAsync("/SupplierLevel");
+            var response = await GetResponseAsStringAsync("/Suppliers");
 
             // Assert
             response.ShouldNotBeNull();
