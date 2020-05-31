@@ -156,7 +156,7 @@ namespace Solution.Permissions
 
         public class Units
         {
-            public const string Default = GroupName + ".Public";
+            public const string Default = GroupName + ".Units";
             public const string Update = Default + ".Update";
             public const string Create = Default + ".Create";
             public const string Delete = Default + ".Delete";

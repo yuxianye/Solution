@@ -22,14 +22,14 @@ $(function () {
                         [
                             {
                                 text: l('Edit'),
-                                visible: abp.auth.isGranted('Solution.Qualities.Update'),
+                                visible: abp.auth.isGranted('Solution.QualityInspects.Update'),
                                 action: function (data) {
                                     editModal.open({ id: data.record.id });
                                 }
                             },
                             {
                                 text: l('Delete'),
-                                visible: abp.auth.isGranted('Solution.Qualities.Delete'),
+                                visible: abp.auth.isGranted('Solution.QualityInspects.Delete'),
                                 confirmMessage: function (data) {
                                     return l('QualityInspectDeletionConfirmationMessage', data.record.id);
                                 },

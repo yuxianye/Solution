@@ -22,14 +22,14 @@ $(function () {
                         [
                             {
                                 text: l('Edit'),
-                                visible: abp.auth.isGranted('Solution.Suppliers.Update'),
+                                visible: abp.auth.isGranted('Solution.SupplierLevels.Update'),
                                 action: function (data) {
                                     editModal.open({ id: data.record.id });
                                 }
                             },
                             {
                                 text: l('Delete'),
-                                visible: abp.auth.isGranted('Solution.Suppliers.Delete'),
+                                visible: abp.auth.isGranted('Solution.SupplierLevels.Delete'),
                                 confirmMessage: function (data) {
                                     return l('SupplierLevelDeletionConfirmationMessage', data.record.id);
                                 },
