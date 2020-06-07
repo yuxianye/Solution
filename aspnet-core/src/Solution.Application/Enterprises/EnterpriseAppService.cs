@@ -4,9 +4,11 @@ using Solution.Enterprises.Dtos;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Repositories;
+using System.Threading.Tasks;
 
 namespace Solution.Enterprises
 {
+
     public class EnterpriseAppService : CrudAppService<Enterprise, EnterpriseDto, Guid, PagedAndSortedResultRequestDto, CreateUpdateEnterpriseDto, CreateUpdateEnterpriseDto>,
         IEnterpriseAppService
     {
@@ -19,5 +21,6 @@ namespace Solution.Enterprises
         public EnterpriseAppService(IRepository<Enterprise, Guid> repository) : base(repository)
         {
         }
+       
     }
 }
